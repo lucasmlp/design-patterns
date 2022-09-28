@@ -1,0 +1,2 @@
+- Use abstract classes to define standard behaviour for methods and override in extended classes if necessary.
+- Use interfaces to define contracts. Contracts does not provide standard behaviour for methods.
