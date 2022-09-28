@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using DesignPatterns.CreationalPatterns;
+using DesignPatterns.CreationalPatterns.FactoryMethod;
 
 Console.WriteLine("Hello, World!");
 

@@ -1,4 +1,4 @@
-namespace DesignPatterns.CreationalPatterns
+namespace DesignPatterns.CreationalPatterns.FactoryMethod
 {
     class Client
     {
