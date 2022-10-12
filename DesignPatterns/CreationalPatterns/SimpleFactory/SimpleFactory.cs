@@ -1,4 +1,4 @@
-namespace SimpleFactory
+namespace DesignPatterns.CreationalPatterns.SimpleFactory
 {
     class Client
     {

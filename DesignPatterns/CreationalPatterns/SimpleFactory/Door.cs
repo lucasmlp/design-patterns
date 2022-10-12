@@ -1,13 +1,21 @@
-namespace SimpleFactory
+namespace DesignPatterns.CreationalPatterns.SimpleFactory
 {
     public abstract class Door
     {
-        private double Width { get; set; }
-        private double Height { get; set; }
+        private double Width;
+        private double Height;
         public Door(double width, double height)
         {
             this.Width = width;
             this.Height = height;
+        }
+        public double GetWidth()
+        {
+            return this.Width;
+        }
+        public double GetHeight()
+        {
+            return this.Height;
         }
     }
 
