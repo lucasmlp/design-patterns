@@ -4,7 +4,7 @@ namespace DesignPatterns.CreationalPatterns.SimpleFactory
     {
         public void Main()
         {
-            var door = new WoodenDoor(1.5, 2.2, "Carvalho");
+            var door = new WoodenDoor(1.5, 2.2, 50, "Carvalho");
         }
     }
 }

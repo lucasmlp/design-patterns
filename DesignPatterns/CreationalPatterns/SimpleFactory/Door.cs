@@ -4,10 +4,12 @@ namespace DesignPatterns.CreationalPatterns.SimpleFactory
     {
         private double Width;
         private double Height;
-        public Door(double width, double height)
+        private double Weight;
+        public Door(double width, double height, double weight)
         {
             this.Width = width;
             this.Height = height;
+            this.Weight = weight;
         }
         public double GetWidth()
         {
@@ -17,15 +19,27 @@ namespace DesignPatterns.CreationalPatterns.SimpleFactory
         {
             return this.Height;
         }
+        public double GetWeight()
+        {
+            return this.Weight;
+        }
     }
 
     public class WoodenDoor : Door
     {
         private string WoodType { get; set; }
 
-        public WoodenDoor(double width, double height, string woodType) : base(width, height)
+        public WoodenDoor(double width, double height, double weight, string woodType) : base(width, height, weight)
         {
             this.WoodType = woodType;
+        }
+    }
+
+    class DoorFactory
+    {
+        public WoodenDoor MakeWoodenDoor(double width, double height, double weight, string woodType)
+        {
+            return new WoodenDoor(width, height, weight, woodType);
         }
     }
 }
