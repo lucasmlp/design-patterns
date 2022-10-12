@@ -10,10 +10,14 @@ public class SimpleFactory_Tests
     private double width;
     private double height;
 
+    public SimpleFactory_Tests()
+    {
+        this.door = new WoodenDoor(1.5, 2.2, 50, "Carvalho"); ;
+    }
+
     [SetUp]
     public void Setup()
     {
-        door = new WoodenDoor(1.5, 2.2, 50, "Carvalho");
     }
 
     [Test]
