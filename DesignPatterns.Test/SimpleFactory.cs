@@ -13,7 +13,7 @@ public class SimpleFactory_Tests
     [SetUp]
     public void Setup()
     {
-        door = new WoodenDoor(1.5, 2.2, "Carvalho");
+        door = new WoodenDoor(1.5, 2.2, 50, "Carvalho");
     }
 
     [Test]
@@ -28,6 +28,13 @@ public class SimpleFactory_Tests
     {
         var width = door.GetHeight();
         Assert.AreEqual(width, 2.2);
+    }
+
+    [Test]
+    public void ShouldGetWeight()
+    {
+        var weight = door.GetWeight();
+        Assert.AreEqual(weight, 50);
     }
 
 
