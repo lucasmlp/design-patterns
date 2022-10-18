@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using DesignPatterns.CreationalPatterns.AbstractFactory;
 
-namespace DesigntPatterns.CreationalPatterns.AbstractFactory.Test;
+namespace DesignPatterns.CreationalPatterns.AbstractFactory.Test;
 
 [TestFixture]
 public class AbstractFactory_Tests

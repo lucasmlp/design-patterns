@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using DesignPatterns.CreationalPatterns.SimpleFactory;
 
-namespace DesigntPatterns.CreationalPatterns.SimpleFactory.Test;
+namespace DesignPatterns.CreationalPatterns.SimpleFactory.Test;
 
 [TestFixture]
 public class SimpleFactory_Tests
